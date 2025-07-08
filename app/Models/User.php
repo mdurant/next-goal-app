@@ -33,6 +33,12 @@ class User extends Authenticatable implements MustVerifyEmail
         'password',
     ];
 
+    // Configuración de la foto de perfil
+    protected $photoDisk = 'public';
+    protected $profilePhotoDirectory = '';
+    protected $photoUrl = '/storage';
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
