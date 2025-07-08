@@ -23,8 +23,9 @@
                 </div>
             </div>
             <!-- tarjeta 2-->
-            <div class="bg-white rounded-lg shadow-sm p-6">
-
+            <div class="bg-white rounded-lg shadow-sm p-6 flex items-center justify-center font-semibold">
+                  NextGoal - ERP
             </div>
+
         </div>
 </x-admin-layout>
