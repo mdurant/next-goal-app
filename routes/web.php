@@ -2,11 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Generics\BanksController;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 
+// Rutas Genericas tablas maestras
+Route::resource('banks', BanksController::class);
 
 Route::middleware([
     'auth:sanctum',
@@ -17,3 +21,4 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
