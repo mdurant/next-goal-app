@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
         $this->call([
             Banks::class,
             BankAccountTypes::class,
@@ -44,6 +45,7 @@ class DatabaseSeeder extends Seeder
             Companies::class,
             PurchaseTypes::class,
             Purchases::class,
+
         ]);
     }
 }
