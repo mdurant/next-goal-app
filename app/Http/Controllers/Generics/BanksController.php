@@ -22,6 +22,8 @@ class BanksController extends Controller
      */
     public function create()
     {
+        notify()->success('Listado de Bancos', 'Bienvenido');
+        notify()->info('Puedes crear un nuevo banco', 'Informacion');
         return view('generics.banks.create');
     }
 
@@ -35,6 +37,7 @@ class BanksController extends Controller
             'name' => 'required|string|max:100',
             'status' => 'required|boolean',
         ]);
+
         Banks::create($validatedData);
     }
 
